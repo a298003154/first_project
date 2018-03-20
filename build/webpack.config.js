@@ -3,27 +3,29 @@ var path = require("path"),
   htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    filename: './src/App.js',
-  },
+  entry: './src/App.js',
   output: {
-    path: '/dist',
+    path: path.resolve(__dirname, '../dist'),
     filename: 'js/[name].bundle.js'
   },
   module: {
     loaders: [
       {
-        test: '/\.js$/',
-        exclude: /node_module/,
+        test: /\.js$/,
+        exclude: '/node_module',
         include: '/src',
         loader: 'babel',
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
       }
     ]
   },
   plugins: [
     new htmlWebpackPlugin({
-      fiename: 'index.html',
       template: 'index.html',
+      filename: 'index.html',
       inject: 'body'
     })
   ]

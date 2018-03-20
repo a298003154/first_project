@@ -65,9 +65,43 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_layer_layer__ = __webpack_require__(1);
+
+
+const App = function() {
+    console.log(__WEBPACK_IMPORTED_MODULE_0__components_layer_layer__["a" /* default */]);
+    const app = document.getElementById('app');
+    app.innerHTML = __WEBPACK_IMPORTED_MODULE_0__components_layer_layer__["a" /* default */].tpl;
+}
+new App();
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layer_html__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layer_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__layer_html__);
+
+
+function layer() {
+    console.log(__WEBPACK_IMPORTED_MODULE_0__layer_html___default.a)
+    return {
+        name: 'layer',
+        tpl: __WEBPACK_IMPORTED_MODULE_0__layer_html___default.a
+    }
+}
+/* harmony default export */ __webpack_exports__["a"] = (layer);
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
-
+module.exports = "<div class=\"layer\">\r\n    <div>layer</div>\r\n</div>";
 
 /***/ })
 /******/ ]);
