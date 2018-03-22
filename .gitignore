@@ -1,4 +1,5 @@
 # Dependency directories
 node_modules/
 dist/
+npm-debug.log
 packge-lock.json
