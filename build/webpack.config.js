@@ -5,7 +5,11 @@ var path = require("path"),
 
 module.exports = {
   devtool: 'eval-source-map',
-  entry: "./src/main.js",
+  entry: [
+    "./src/main.js",
+    'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000'
+  ],
+
   output: {
     path: path.resolve(__dirname, "../dist"),
     filename: "js/[name].bundle.js"
@@ -83,6 +87,7 @@ module.exports = {
       template: "index.html",
       filename: "index.html",
       inject: "body"
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ]
 };

@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --config ./build/webpack.config.js --progress --display-modules",
+    "webpack": "webpack --config ./build/webpack.config.js --progress",
     "dev": "node ./server/dev-server.js"
   },
   "repository": {
