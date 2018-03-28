@@ -8,7 +8,7 @@
 export default {
     data() {
         return {
-            count: 12
+            count: 12123
         }
     },
     mounted(){

@@ -11,7 +11,7 @@
     data() {
       return {
         name: 'user',
-        data: 'data'
+        data: '123'
       }
     },
 
