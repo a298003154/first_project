@@ -11,7 +11,8 @@ var path = require('path'),
     devMiddleware = koaMiddleware.devMiddleware,
     // hotMiddleware = require('webpack-hot-middleware');
     hotMiddleware = koaMiddleware.hotMiddleware;
-    
+
+
 var devMiddlewareInstance = devMiddleware(compiler, {
     publicPath: '/',
     stats: {

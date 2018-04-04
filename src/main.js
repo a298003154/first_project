@@ -2,7 +2,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Router from './router/router'
-import './css/common';
+import './style/index.scss';
 import App from './App'
 
 Vue.use(VueRouter)

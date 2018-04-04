@@ -1,0 +1,12 @@
+.div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    // background-color: green;
+    div{
+      flex: 1;
+      background-color: greenyellow;
+    }
+}

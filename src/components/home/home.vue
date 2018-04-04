@@ -1,6 +1,9 @@
 <template>
     <div class="div">
         {{count}}
+        <div>
+          9999
+        </div>
     </div>
 </template>
 
@@ -18,9 +21,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .div{
-        width: 100px;
-        height: 100px;
-        background-color: green;
-    }
+    @import '../home/home.scss';
 </style>

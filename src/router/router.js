@@ -1,7 +1,8 @@
 // import App from '../App.vue';
-
-const home = r => require.ensure([], () => r(require('../page/home/home')), 'home')
-const user = r => require.ensure([], () => r(require('../page/user/user')), 'user')
+const home = require('../components/home/home');
+const user = require('../components/user/user');
+// const home = r => require.ensure([], () => r(require('../components/home/home')), 'home')
+// const user = r => require.ensure([], () => r(require('../components/user/user')), 'user')
 
 export default {
     routerMode: 'hash',

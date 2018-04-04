@@ -1,7 +1,7 @@
 module.exports = {
-  plugins: loader => [
+  plugins: [
     //CSS浏览器兼容
     require("postcss-import"),
-    require("autoprefixer")({ browsers: ["last 5 versions"] })
+    require("autoprefixer")({ browsers: ["last 10 versions"] })
   ]
 };
